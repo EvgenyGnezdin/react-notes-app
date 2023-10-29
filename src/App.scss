@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.container{
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+  min-height: 100vh;
+}
+
+.note.new {
+  background-color: #dbd6d6;
+}
+textarea{
+  background-color: #dbd6d6;
+  border: none;
+  resize: none;
+}
+textarea:focus{
+  outline: none;
+}
+
+.save {
+  border: none;
+  background-color: rgb(173, 165, 165);
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.save:hover {
+  transition: all 0.6s;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
+.notes-list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+}
+.note {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  min-height: 180px;
+  background: #7f9cdb;
+  border-radius: 15px;
+  white-space: pre-wrap;
+}
+.note-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.delete-icon{
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #dbd6d6;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+.search input {
+  border: none;
+  background-color: #dbd6d6;
+}
+.search input:focus {
+  outline: none;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.save.new {
+ background-color: #dbd6d6;
+}
+
+.dark-mode {
+  background-color: #000;
+}
+.dark-mode h1 {
+  color: #fff;
+}
